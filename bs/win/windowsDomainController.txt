@@ -1,0 +1,24 @@
+						Domain Controller 		
+	
+Windwos Controller ist ein Server der AutentizifurnsAnfragen beantwort und Benutzer btz Geräte in einem Netzwerk identifiziert.
+Domänen sind Mittel für die Hierarchische Organsation von Benutzern und Geräten, die in einem Netzwerk zusammenarbeiten. 
+Der DomainController sorgt dafür das diese Daten organiesiert und sicher bleiben.
+
+Die Hauptaufage des DomainControllers ist die Autentifizirund und Vaidirung der Zugriffe von Benutzern und 
+Geräten im Netzwerk. Wenn sich ein Benutzer btz ein Gerät an der Domäne anmeldet, überprüft der DC die 
+Anmeldeinformationen um den Benutzer zugriff zu gewähren bzw verweigen. Der Hauptservice im DC ist 
+der ACtive Directory. Mit ihr können Benutzer und Geräte und ihre Gehte verwaltet werden.
+Weitere Rollen die der DC übernimmt sind:
+-> PDC-Emulator:	 Verantwortlich für die Anwendung und Verwaltung der Gruppenrichtlinien. 
+-> RID-Master: 		 Alle Objekte in der Domain eindeutig ID haben 
+-> Infrastruturmaster:   Diese Rolle word nur wewendeen wenn es mehere Subdomains gibt. Werwaltet 
+			 Benuzer und Gruppen über mehere Domänen. 
+-> Schemamaster:	 Erslaubt das erweitern und verändern von Schemas der AD 	max 1x 
+-> Domainmaster:	 Die Gesamtstruktur zu wervanten.				max 1x 
+
+		Instalation des DC
+
+Damit der DC verwendeet werden kann muss zunächst die ensprechen Rolle installiert werden. 
+Dazu server MAnager -> Manage -> Add Roles and Features -> install Actice Diretory Domain Services -> 
+DC konfigurieren.
+-> DC hochstufen 

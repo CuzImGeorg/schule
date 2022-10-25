@@ -1,0 +1,9 @@
+artist{id:serial, name:varchar}
+       ---------
+album{id:serial, name:varchar, artistid:int}
+      --------- 	       ~~~~~~~~~~~~
+Track{id:serial, name:varchar, time:time, albumid:int}
+      ---------			 	 ~~~~~~~~~~~
+Payed{played:date, trackid:int  }
+     ------------  ------------ 
+	            ~~~~~~~~~~

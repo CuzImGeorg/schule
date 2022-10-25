@@ -1,0 +1,19 @@
+			Nets vs Dienst
+
+übertgragundmedium = Cabel
+Übertragundsgerät = Switch Ruter 
+
+Dienst läuft im Hintergrund zum beispiel http Service
+Dient werden in vielen Fällen mit dem Pc Start ausgeführt
+ 
+Ein CLient nutzt den Diest zum beispiel webbrowser
+
+POP3 mailbox geht irgendwann über 
+IMAP direkte sicht auf dem webserver kann sie von überall aufrufen, wenn man einal löscht überall weg. Nachteil/Vorteil ist das alles was man mach gesync werednmuss. 
+
+peer to peer = Beide sind glecihzeig server und client 
+Clietnt server trnnung zwicher server und client 
+
+crossover für alte geraäte neue regeln über Logik
+ 
+  

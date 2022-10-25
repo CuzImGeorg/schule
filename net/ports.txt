@@ -1,0 +1,11 @@
+-> well known ports 0-1023
+-> register ports: 1024-49151
+-> dynamisch ports: 49151 - 65???
+
+Socket: 
+Lokate Ip-Addresse 
+Lokalen Port 
+Ip-Address des Kommonationpartners
+Portnummer dees Kommunikationspartners
+Kommunikationstyp:
+Protokoll

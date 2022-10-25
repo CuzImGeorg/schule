@@ -1,0 +1,29 @@
+Folgende cmds gehören zur ddl:
+  -> CREATE Objekte erzeugen 
+  -> DROP löscht objekte 
+  -> ALTER db strucktur bearbeiten 
+  -> RENAME db objeket umbenennen 	
+  -> TRUNKCATE ALLE Einträge in einer Tabelle löschen 
+  -> COMMAND kommentare machen 
+
+DQL wir werfendet um abfragen zu über daten im schema zu performen 
+  -> SELECT slectiert seltierbare selectionen von der db 
+
+DML besthet aus Commandos zur manipulation von Daten ind der DB 
+  -> INSERT > db
+  -> UPDATE daten db verändenr
+  -> DELETE datensetze löschen  	   	
+ 
+  -> LOCK tabelle zu sperren -> voarllen bei TRANSACTIOEN verwendet und soll werhindern das es zu Inkonsizenten daten kommt 
+  -> CALL können funktionen und proceduren aufzurufen 
+  -> EXPLAIN PLAN zugroffs pfan auf die daten anzeigen zu lassen 
+
+DCL zugriffsrechte und andre controll flüsse des datenbank systems zu steuern 
+  -> GRAND db user zugriff privilengien 
+  -> REVOKE fb user privelegien entfernen 
+  -> COMMIT TRANSACTION zu beenden 
+  -> ROLLBACK TRANSACTION rückgängig zu machen 
+
+SAFEPOINT erstell einen Kontrollpunkt inherhab einer Transaktion 
+
+SET TRANSACTION cmd TRANSACTION zu spezifizieren   

@@ -1,0 +1,10 @@
+Ein Router ist ein gehärtes OS; nur für seine Aufgaben gemacht.
+
+
+Protokolle:
+ARP: Adress resoluzion Protokoll; Von Ip addresse MAc Addresse bekomen. 
+RARP: Reverse ARP: MAC Addrese IP-Addresse getten 
+BOOTP: Bootstrap statisches DHCP vorgänger von DHCP wird heute nicht mehr verwendet
+DHCP: gibt einen PC wichtige Netzinformationen 
+
+ 	

@@ -1,0 +1,23 @@
+Standalone Tags sind in sich eingeschlossene tags bs <br />
+InlineTags müssen in einem Tag sien zb <strong>TEXT</strong>
+
+dtd: 
++ mindesten +1 bis unendlich 
+* beliebig viel 
+
+Fomrular ist ein Fomular wenn es ein form Tag hat
+
+input eine zeile Standalone man lest von value
+textarea= mehr zeilen hat anfan und ende Tag col und row
+
+vektorgrafiken können ohne datenverlust die größe verändern 
+vergrafigekn svg datei 
+
+
+jpeg zu start kompriemert werden entszehen Artefacte 
+gif dithering kann farben reduzieren
+jpeg interlacing das man aus bandbreiten gründees erst ein schleterse qualität sieht dann lädt sich im hindergrund eine bessere qualität 
+gif max 256 Farben
+png png8 png24 verlust freie Kompression 8 bit transparenz 
+
+toolkit mit title="text"

@@ -1,0 +1,6 @@
+wenn arrys ein wert zugewisen wird das wird automatisch bein nächstn index hinzugefügt.
+arrays kann man mit $array = array(1,2,3,4,); befüllen
+
+assosative arrays 
+$person = array("Vorname" => "Otto", "Nahname" => "Maier");
+

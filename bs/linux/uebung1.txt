@@ -1,0 +1,24 @@
+	
+1-> wechsle in den Ordner /tmp/
+2-> Erstelle einen Ordner übung eins 
+3-> Erstelle die ordner o1,o2,o3 
+4-> Estelle ein Datei file 1.txt
+5-> kopiere die txt Datei ind den Ordner o1 
+6-> kopiere die txt DAtei ind den Ordner o2 mit den name 2.txt
+7-> lösche den Ordner o3
+8-> gibt den Inhalt der Datei /etc/passwd in der CMD aus
+9-> kopiere die ersten 10 Zeilen der DAtei /etc/passwd in den File2.txt
+10-> lösche den Ordner o1
+
+1-> cd /tmp/
+2-> mkdir uebung1
+   cd uebung1
+3-> mkdir o1 02 03
+4-> > 1.txt
+5-> cp 1.txt 01/
+6-> cp 1.txt o2/2.txt
+7-> rmdir 03
+8-> cat /etc/passwd
+9-> head -10 /etc/passwd > o2/1.txt
+10-> rm -rf o1
+

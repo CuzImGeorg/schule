@@ -1,0 +1,34 @@
+- => file
+d => file 
+
+zugrifrechte des besitzers 
+r = read
+w = write 
+x = execute
+
+Bei einen Ordner Standart zugriff rechte beim erstellen vergeben 
+-> Der beziter rwx
+-> grupp rx
+-> andere rx
+
+3spate besitzer der datei immer ein benutzer 
+benutzergruppe 4te spalter 
+
+
+
+ue1
+
+cd /tmp
+mkdir share
+sudo adduser mario
+sudo adduser wario
+sudp chown mario:mario share 
+sudo usermod -G mario luigi
+
+
+
+mkdir austausch 
+sudo adduser daisy
+
+sudo chown daisy 
+

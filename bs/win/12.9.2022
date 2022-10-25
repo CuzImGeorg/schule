@@ -1,0 +1,14 @@
+-> 1. Was ist HyperV?
+-> 2. Worunter unterscheiden sich gen 1/2 Vm unter HyperV
+-> 3. WElche möglichkeiten gibt es zur erstellen einer virtuellen Festplatte 
+-> 4. WElche Arten von virtuellen Switched gibt es + unterschied
+-> 5. Was ist ein sog sicherungsPunkt 
+-> 6. WElche Komponeten können in Hyperv im laufenden Betrib verändert werden (Hot-Swap)
+
+
+-> 1. HyperV ist ein Hypervisor von MC VM mochen ab professional / enterprise /  educational home nicht standartmäßig seri server 2008 automatisch dabei  
+-> 2. gen1 32+64 bit und alte hw  gen 2 nur 64 bit + UEFI + neuere Virtualisirungs software man kann nicht wechseln 
+-> 3. dynamisch und fix. fix isch holt fix und dynamisch isch holt dynamisch 
+-> 4. intern extern intern ist ein Virtulelles net host/Gast etern isch an a physchischen Netzadapter und Vm hott vollen netzugriff privat nur virteulle computer 
+-> 5. Ein Zeitpiunk der vm wo man zurücksetzen kann
+-> 6.  

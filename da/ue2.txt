@@ -1,0 +1,43 @@
+CREATE TABLE tierart(
+	 		  TierNR serial PRIMARY KEY, 
+			  name varchar(255), 
+			  lebenstraum varchar(255), 
+			  anzahl int, 
+			  gruppe varchar(255) 
+			 );
+
+
+CREATE TABLE tier(TierNR serial PRIMARY KEY, 
+				  name varchar(255),
+				  tierartnr int ,
+				  geschlecht varchar(1), size float4, alter int, gewicht float4, nachkommen int,
+				 FOREIGN KEY(tierartnr) REFERENCES tierart (tiernr) );
+
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Afrika-Marabu', 'Afrika', 3 , 'Vögel');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Alpaka', 'Südamerica', 10 , 'Säugetiere');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('ASiatischer Elefant', 'Südasien', 4 , 'Säugetiere');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Azara-Aguti', 'Regenwälder Südamerica', 5 , 'Säugetiere');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Bline Höhlensamler', 'Süßwasser in Nord und Zentralamerica', 2 , 'Fische');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Brillenblattnase', 'Zentral- und Südamerika', 25 , 'Säugetiere');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Chinesischer Muntjak', 'Walder Osafrika', 5 , 'Säugetiere');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Dottenweber', 'Walder Osafrika', 5 , 'Vögel');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Eisbär', 'Arktis', 3 , 'Säugetiere');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Erdmännchen', 'Südafrika', 11 , 'Säugetiere');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Europäsischer Braunbär', 'Walder Nordeuropa', 3 , 'Säugetiere');
+INSERT INTO tierart(name,lebensraum,anzahl,gruppe) VALUES ('Fette Sanratte', 'Sandwüsten Nordafrika', 7 , 'Säugetiere');
+
+
+
+
+1-> SELECT *  FROM tier WHERE geschlecht like 'm';
+2-> SELECT lebensraum FROM tierart WHERE name like 'Erdmännchen';
+3-> SELECT * FROM tier WHERE nachkommen = 0;
+4-> SELECT * FROM tierart WHERE name like '%bär%';
+5-> SELECT * FROM tierart WHERE gruppe like 'Vögel' or gruppe like 'Fische' ;
+6-> SELECT name FROM tierart WHERE tiernr = (SELECT tiernr FROM tier WHERE name like 'Uta');
+7-> SELECT * FROM tier WHERE tierartnr = (SELECT tiernr FROM tierart WHERE name like 'Alpaka' );
+8-> SELECT * FROM tier WHERE tierartnr = ANY (SELECT  tiernr FROM tierart WHERE gruppe not like 'Säugetiere');
+9-> SELECT * FROM tier WHERE tierartnr = (SELECT tiernr FROM tierart WHERE name like 'Eisbär' ); 
+10->  
+
+

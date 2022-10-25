@@ -1,0 +1,40 @@
+http request get/post 
+php startseiten konfiguren reienfolge 
+get rewuest sind in url im header 
+get ungeignet für pws 
+post pw schiken 
+post hot kuane maximale länge 
+get max ca. 240 zeichnen
+JIT Compier  = just in time Comilter
+php gibt auch jit compiler 
+datentypern
+boolean true/false
+integer ganzal werte 
+float 
+string ASCII
+resource
+array y
+obkect 
+NULL 
+serializing 
+
+resources können nicht seriaisiert werden 
+innerdb 
+
+error_reporting E_ALl
+kontrolliren ob display error auf on
+
+include hot das code an der stelle rein wenn problem ist macht er darunter weiter 
+requirer macht ncht mehr weiter 
+
+*_once mach dass das code nur maximal einmal reingeladen wird 
+
+immer php seite aufrufen 
+
+in php werden strings mit einen punkt zussamengehängt 
+
+=== gleic ohne das Typ geändert werden muss 
+
+
+
+

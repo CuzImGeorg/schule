@@ -1,0 +1,13 @@
+ethernet = 10 mbit 
+fastethnrt = 100 mbit
+gigabit port > 1 gigabit
+
+
+enable mehr Befehle tb show Befehle
+confd um in die Config zu kommen 
+
+consolen password 
+ethernet password 
+
+enable password unabhöngig wie man auf Zugreift 
+

@@ -1,0 +1,21 @@
+1-> 
+1-> ll -> 52
+2-> Formel 1/Mercedes/Hamilton.txt:Weltmeister
+Formel E/Fahrer/Buemi.txt:Weltmeister
+3-> 7
+4-> ./Formel E/Teams/Mahindra.txt
+5-> 2
+
+
+2->
+1-> rm -r Arrows/
+2-> mv Sauber/Leclerc.txt Ferrari/
+3-> rm Ferrari/Raikkonen.txt 
+4-> mv Force\ India/ 'Raing Point'
+5-> mv Alonso.txt Lando.txt
+6-> mv Formel\ 1/McLaren/Vandoorne.txt Formel\ E/
+7-> mv Gasly.txt ../Red\ Bull/
+8-> mv Riccardo.txt ../Renault/
+9-> mkdir 'Formel 2' IndyCar
+10-> zip -r F1.zip Formel\ 1/ 
+

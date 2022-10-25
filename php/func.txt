@@ -1,0 +1,3 @@
+Eine Methode ist in einer Klasse, hat zugriffmodifikator 
+Eine function hat Paramether und einen Rückgabewert 
+

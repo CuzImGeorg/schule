@@ -1,0 +1,14 @@
+SQL funktioeńen  können in 2 unterschiedliche gruppen eingeteilt werden 
+-> Agregatfunktionen 
+-> Funtionen zu Daten Manipulation 
+
+
+Ein Agregatfunction führt Befele über mehrer Datensetze aus und gibt ein Wert zurück.
+Die bekanntesten Agregat funtionen sind:
+-> AVG SELECT avg(note)
+-> min/max 
+-> count 
+-> sum 
+->
+
+Das SQL GROUP BY Statement gruppiert Datensetze die den selben wert haben zu einen zussamgefassten resultat. Group BY Statement wird mit den sog. Aggregatfuntionen verwendet. Hierbei gilt jedes ausgewählte Attribut das nicht in der Agregatunktion verwendent wird muss in der Group BY angegeben werden. Die Reihenfolge der angegeben Attribute wird auf für das zussamenfassen der WErte hergenommen  

@@ -1,0 +1,4 @@
+DHCP discover ->
+<- dhcp offer 
+DHCP request -> 
+<- DHCP ACK

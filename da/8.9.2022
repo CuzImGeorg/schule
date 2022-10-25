@@ -1,0 +1,40 @@
+				ER Model 
+
+Eine Entität ist eine eindeutig Identifizierbarens, einzelnes Informationsobjekt. Entitäten können sowol reale Dinge, Personen oder abstrakte objekte representieren.
+Eine Relation beschreibt den Zussammenhang zwischen 2 oder mehreren Entitäten. Dabei unterscheiden wir:
+-> 1:1 zu jedem Tuple einer Entität gibt es genau ein Tuple zur Bezihung gehörenden Etität. 
+-> 1:n zu jedem Tuple einer Entität gibt es mehere Tuples zur Bezihung gehörenden Entität.  
+-> n:m zu mehrern Tuples einer Entiät gehören mehrer Tuples zur Benzihung gehörenden Entität. 
+
+Attribute beschreiben Eigenschaften von Entitäten und Relation.
+
+
+			Geschichte des Er Models
+
+1976 veröffentlichte Peter Chen eine wischenschaftliche Arbeit mit dem Titel "The Entity Relationship Model: Toward unfided view of data" in dieser Arbeit definierte Chen eine Grundlege einheitliche Darstellen für DatenbankModelle dabei schlug er folgene vorgehenzweiße vor. 
+
+-> Entitäten verden mit einem Rechteck representirt
+-> Relation mit einer Raute 
+-> Attribute mit einer Elypse 
+-> Verbindung ist eine Linie 
+
+Übung 1:
+Beschreibe was dasfolgende er Modell darstellt
+
+Schüler besuchen Klassen
+Man kann vieles ablesen aber es fehlen Attribute und Kardinalitäten 
+
+
+
+    (Name)   (Nachname)						    		(Name)
+       |	|  								----
+       \	|								  |
+	-----------------					   ------------------
+	|               | 		 /---\			   |		    |
+	|		| n		/     \			 1 |		    |
+  -----	|     Schüler   | -------------/besucht\-------------------|	Klasse 	    |
+ /	|		|	       \       /		   |		    |
+(id)	|		|               \-----/			   |		    |
+--	-----------------					   ------------------
+	/		\							| 
+      (Geb) 		(Adresse) 					(Raum Nummer)

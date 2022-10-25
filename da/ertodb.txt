@@ -1,0 +1,11 @@
+-> Jede Entitiät wird zu einer Tabelle
+-> Jedes Atribut wird zu einer Spalte zu der tabellee hinzugefügt 
+-> Bezihungen werden wie foldgt
+	 > 1:1 ausuchen Primarschlüsel der anderen 
+	 > 1:n der Primärschlüssel der einer Tabelle wird als Fremdschlüssel zur n-Tabelle hinzugefügt 
+	 > n:m wird eine Zwichentabelle für die Beziehung erstelt beide Primärschlüsen und bilden einesn gemeinsamen Primärschlussel der Tabelle 
+	 > is a: wenn ise sich gegenseitig auschlißen kann die geralisierung weg gelassen werden und deren Attibute werden zu den Entitäten hinzugefügt 
+		wenn sie sich nicht asuschließen  dann wird auch für dei geralisirung eine tabelle erstellt. Der Primärcschlusse der genralisirn wird
+		als fremdshlüsseö zu dem spefikation hinzugefügt und ist derren Primör schlüssel 
+
+

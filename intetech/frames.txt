@@ -1,0 +1,5 @@
+target="_blank" öffnet den Link in einem neuen Tab/Fenster 
+<Href "link to download" download> um alle formate zu downloaden 
+
+h1 kann id vergeben werden um daruf zu verlinken mit #id 
+

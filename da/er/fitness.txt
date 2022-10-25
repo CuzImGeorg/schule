@@ -1,0 +1,98 @@
+CREATE TABLE kunde(
+	knr serial PRIMARY KEY,
+	vorname varchar(63),
+	nachname varchar(63),
+	gebdat date,
+	ablaufdatum date,
+	telefon int,
+	addresse varchar(63)
+);
+
+CREATE TABLE mitarbeiter (
+	svnr serial PRIMARY KEY,
+	vorname varchar(63),
+	nachname varchar(63),
+	telefon int,
+	eintritsdatum date
+
+);
+
+CREATE TABLE standort(
+	strasse varchar(127) unique,
+	nr int unique,
+	PRIMARY KEY(strasse, nr),
+	plz int,
+	name varchar(63),
+	ort varchar(63),
+	email varchar(63),
+	telnr int,
+	leiter int,
+	FOREIGN KEY (leiter) REFERENCES mitarbeiter (svnr)
+);
+
+CREATE TABLE m_admin (
+	mitnr int unique,
+	FOREIGN KEY(mitnr) REFERENCES mitarbeiter (svnr),
+	funktion varchar(255)
+);
+
+CREATE TABLE m_trainer (
+	mitnr int unique,
+	FOREIGN KEY(mitnr) REFERENCES mitarbeiter (svnr),
+	ausbildung varchar(255),
+	stundensatz int
+);
+
+CREATE TABLE raum(
+	rnr int PRIMARY KEY,
+	name varchar(63),
+	standortnr int,
+	FOREIGN KEY(standortnr) REFERENCES standort(nr),
+	standortstrasse varchar(63),
+	FOREIGN KEY(standortstrasse) REFERENCES standort(strasse),
+	kap int
+);
+
+CREATE TABLE geraet (
+	snr int PRIMARY KEY,
+	raumnr int,
+	FOREIGN KEY(raumnr) REFERENCES raum(rnr),
+	name varchar(63),
+	garantie int,
+	anschaffdat date
+);
+
+CREATE TABLE kurs(
+	knr serial PRIMARY KEY,
+	beschreibung varchar(255),
+	datum date,
+	begin timestamp,
+	ende timestamp,
+	raumnr int,
+	FOREIGN KEY(raumnr) REFERENCES raum(rnr),
+	kursdavor int,
+	FOREIGN KEY(kursdavor) REFERENCES kurs (knr)
+);
+
+CREATE TABLE kundekurs(
+	kundeid int,
+	FOREIGN KEY(kundeid) REFERENCES kunde(knr),
+	kursid int,
+	FOREIGN KEY(kursid) REFERENCES kurs(knr) 
+	
+);
+
+CREATE TABLE kurstrainer(
+	kursid int,
+	FOREIGN KEY(kursid) REFERENCES kurs(knr),
+	trainerid int,
+	FOREIGN KEY (trainerid) REFERENCES m_trainer (mitnr)
+);
+
+CREATE TABLE einzeltraining(
+	trainerid int,
+	FOREIGN KEY (trainerid) REFERENCES m_trainer (mitnr),
+	kundeid int,
+	FOREIGN KEY(kundeid) REFERENCES kunde(knr)
+
+);

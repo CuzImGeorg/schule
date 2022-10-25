@@ -1,0 +1,20 @@
+Active Directory Domain Service (ADDS)
+
+Bei der Active Directory handelt es sich um den Zentralen Verzeichnungsdienst von Microsoft für Windows Netzwerke. Die AD ermöglicht es die Struktur einer Organisation nachzubilden und die Verwendung von Netzwerk Ressourcen oder Netzwerkobjekten zentral zu verwalten. In diesem Verzeichnis sind die Verschiedenen Geräte und Ressourcen eines Netzwerkes inklusive ihrer Attribute gespeichert.
+Struktur einer Organisation
+Mithilfe der AD lässt sich die Struktur des Netzwerks mit seinen angeschlossenen Geräten der Struktur einer Organisation nachbilden. Einzelne Unternehmensbereiche werden in sogenannten Domainen getrennt und voneinander abgegrenzt. Die Domainen können Hierarchisch gegliedert sein. Über die AD kann nach bestimmten Geräten oder Attributen gesucht werden. Dem Administrator ermöglicht die AD die zentrale Verwaltung der Benutzerrechte für einzelne Geräte oder Objekte und das Freischalten oder das Sperren von Diensten und Netzwerk-Ressourcen. Schreibenden Zugriff auf den Verzeichnungsdienst erhält in der Regel nur der Administrator des Netzwerkes. Zu den Administrierbaren-Ressourcen zählen unteranderem:
+•	Zugriffsrechte auf Verzeichnisse für User/Benutzer
+•	Speicherplatz
+•	Nutzungsrechte von Anwendungen
+•	Nutzungsrechte für Peripheriegeräte z.B. Netzwerkdrucker und andere Netzwerkdienste
+Aufbau der Active Directrory
+Eine AD kann in Drei grundlegenden Komponenten aufgeteilt werden: 
+1.	Das Schema
+2.	Die Konfiguration
+3.	Die Domäne
+Das Schema bildet eine Art Schablone, die für alle Einträge im Verzeichnis Anwendung findet. Im Schema sind die Objekttypen, Klassen, Attribute und die Syntax der Attribute definiert.
+Die Struktur der AD ist in der Konfiguration zu finden. Die Domäne beinhaltet alle ihre Objekte beschreibenden Informationen. Diese Informationen sind Domänenspezifisch und daher nur für den Domänenkontroller verfügbar.
+Die Datenbank des Verzeichnisdienstes arbeitet Objektbasiert und ist Hierarchisch aufgebaut. Die einzelnen Datensätze werden als Objekte bezeichnet. Jedes Objekt besitzt unterschiedliche Attribute und wird eindeutig über seine Objekt-ID identifiziert.
+Die einzelnen Objekte können in sogenannten Organisationseinheiten abgelegt werden. Dafür können sowohl vorgefertigte Container als auch vom Administrator erstelle Container verwendet werden. Auch Gruppenrichtlinien lassen sich in der AD als Objekte Speicher.
+Active Directory und DNS
+Zwischen der AD und den DNS besteht eine enge Verknüpfung. Die Hierarchische Struktur von DNS und AD ist identisch. Jeder Rechner in der Netzwerk-Domäne ist durch einen Vollqualifizierten-DNS-Namen (FQDN) eindeutig beschrieben. 

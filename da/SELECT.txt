@@ -1,0 +1,44 @@
+				Abfragen in SQL 
+
+SELECT attribute 
+FROM tabelle 
+WHERE bedigung 
+ODER BY
+GROUP BY 
+LIMIT 
+	id	 Name				Name					  R.NR
+	|	/				|					/
+-----------------	     ---	-----------------	    ---		-----------------
+|	 	|	    /   \	|		|	   /   \	|		|
+|  Schüler	|----------|besuh|------|    KLasse	|---------|istim|-------|	Raum	|
+|		|	    \   /	|		|	   \   /	|		|
+-----------------	     ---	-----------------           ---		-----------------
+	|1:m
+	|		 id
+	|		 --
+	|		/
+       ---	---------
+      /   \1:1	|	|--------name	
+     |macht|----| Fach	|
+      \   /	|	|
+       ---      ---------
+	|
+	|
+	|		 id 				id	name
+	|		/				|	/
+      -------------------	    ---		-----------------
+      |			| 1:m	   /   \	|		|
+      |	Prüfung		|---------|ers  |-------| Lehrperson	|
+      |			| 	   \   /	|		|
+      -------------------           ---		-----------------
+
+
+Abfragen. 
+
+
+SLECET * FROM Schüler WHERE klassename like '1A';
+SELECT name FROM KLASSE WHERE R-NR like 'C4.28';
+SELECT schülerid FORM fachschülerprüfung WHERE fachid = (SLECT id FROM fach WHERE name like 'DEU') AND note < 6;
+SLECET name FROM  lehrperson WHERE id = (SELECT lehrerid FROM prüfung WHERE id = (SELECT prüfungid FROM schülerfachprüfung WHERE fachid = ( SLECT id FROM fach WHERE name like 'DEU') ));
+SELECT note FROM fachschülerprüfung WHERE schülerid = (SELECT id FROM schüler WHERE name like 'Mario Rossi');
+     	
