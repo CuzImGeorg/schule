@@ -1,0 +1,15 @@
+1-> DNS -> Domain name service = domain to ip 
+2-> Er specihert die ip addresen und domain ->  
+3-> gettet ip fon der domain ; 
+4-> https://www.google.com/search?q=dns+request+ablauf+&client=ubuntu&hs=85f&channel=fs&sxsrf=ALiCzsZTisG4Opu-lu-vPb4VFDRPHQ4JbA%3A1667806676318&ei=1LVoY9GIE7y3xc8P9biV-Ac&ved=0ahUKEwjRwvuDyJv7AhW8W_EDHXVcBX8Q4dUDCA4&uact=5&oq=dns+request+ablauf+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeMggIABAWEB4QCjIGCAAQFhAeOgoIABBHENYEELADOgcIABCwAxBDOgoIABCABBCHAhAUOgUIABCABDoECAAQQzoHCAAQgAQQEzoICAAQFhAeEBM6BQghEKABOgQIIRAVSgQITRgBSgQIQRgASgQIRhgAUFxY2SBg5iFoAXABeACAAYcDiAHwDZIBBzEuMS4yLjOYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp#imgrc=GxmfiJwa4cP4SM
+5-> top level domain sind .de .it .com ... -> länderbezogene und internationae Top Level Domains
+
+6-> A: Eintrag einer IPv4 - Adresse. Beeinflusst die Online-Anzeige der Webseiten (der Browser bevorzugt IPv4).
+
+AAAA: Eintrag einer IPv6 - Adresse. Beeinflusst die Online-Anzeige der Webseiten (der Browser bevorzugt IPv6). 
+
+CNAME: Hier trägt man den Namens einer Subdomain ein. Die Subdomain wird dann auf die benötigte Domain umgeleitet.
+
+MX: Hier trägt man den Namen des E-Mail-Servers ein (z.B. mx1.active24.com). Dadurch wird festgelegt, wo an die Domain gesendeten E-Mails ankommen werden.
+7-> Dns scavanging überprüft ob die source noch gültig ist und löcht diese sonst
+

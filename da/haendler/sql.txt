@@ -1,0 +1,10 @@
+1-> SELECT ort_plz FROM ort WHERE ort like 'München'
+2-> SELECT strasse FROM haendler WHERE name like  'Ngyen'
+3-> SELECT name FROM haendler WHERE onr = (SELECT onr FROM ort WHERE ort like 'München')
+4-> SELECT COUNT(wnr) FROM ware WHERE tnr = (SELECT tnr FROM typ WHERE typ like 'Sonstigen')
+5-> SELECT * FROM ware WHERE tnr !=  (SELECT tnr FROM typ Where typ like 'Sonstiges' or typ like 'Zubehör') 
+6-> SELECT name FROM haendler WHERE hnr = (SELECT hnr FROM liefert WHERE wnr = (SELECT wnr FROM ware WHERE bezeichnung like 'Eieruhr') )
+7-> SELECT typ FROM typ WHERE tnr = (SELECT obertyp FROM typ WHERE typ like 'CPU') 
+8-> SELECT name FROM haendler WHERE hnr = ANY (SELECT  hnr FROM liefert WHERE preis = (SELECT MIN(preis) FROM liefert WHERE wnr = (SELECT wnr FROM ware Where bezeichnung like 'Kofun 6025')) )
+9->  SELECT onr, count(*) as a FROM  haendler GROUP BY onr order by a desc LIMIT 1
+10-> 
